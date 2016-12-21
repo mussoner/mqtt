@@ -4,17 +4,17 @@ package mqtt.message;
  * QoS of the messages
  */
 public enum QoS {
-    AT_MOST_EXACTLY(0),
+    AT_MOST_ONCE(0),
     AT_LEAST_ONCE(1),
-    EXACTLY_ONE(2);
+    EXACTLY_ONCE(2);
 
     private final int val;
 
     QoS(int val) {
         this.val = val;
     }
-    
-    public int getValue(){
+
+    public int getValue() {
         return this.val;
     }
 
