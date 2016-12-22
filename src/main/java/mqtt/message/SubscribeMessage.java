@@ -101,4 +101,8 @@ public class SubscribeMessage extends RetryableMessage {
         return topicQoSs;
     }
 
+    @Override
+    public String toString() {
+        return "SubscribeMessage{" + "topics=" + topics + ", topicQoSs=" + topicQoSs + '}';
+    }
 }

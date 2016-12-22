@@ -74,4 +74,8 @@ public class SubAckMessage extends RetryableMessage {
                 "SubAck messages don't use the QoS flags.");
     }
 
+    @Override
+    public String toString() {
+        return "SubAckMessage{" + "grantedQoSs=" + grantedQoSs + '}';
+    }
 }

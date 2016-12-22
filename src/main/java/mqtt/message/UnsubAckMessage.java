@@ -30,4 +30,8 @@ public class UnsubAckMessage extends RetryableMessage {
                 "UnsubAck messages don't use the QoS flags.");
     }
 
+    @Override
+    public String toString() {
+        return "UnsubAckMessage{" + '}';
+    }
 }

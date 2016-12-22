@@ -27,4 +27,8 @@ public class DisconnectMessage extends Message {
         throw new UnsupportedOperationException("DISCONNECT message does not support the RETAIN flag");
     }
 
+    @Override
+    public String toString() {
+        return "DisconnectMessage{" + '}';
+    }
 }

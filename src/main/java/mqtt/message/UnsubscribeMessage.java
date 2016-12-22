@@ -85,4 +85,8 @@ public class UnsubscribeMessage extends RetryableMessage {
         return topics;
     }
 
+    @Override
+    public String toString() {
+        return "UnsubscribeMessage{" + "topics=" + topics + '}';
+    }
 }

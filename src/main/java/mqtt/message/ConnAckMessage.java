@@ -96,4 +96,10 @@ public class ConnAckMessage extends Message {
             throw new IllegalArgumentException("Unkwnown ConnectionStatus detected : " + val);
         }
     }
+
+    @Override
+    public String toString() {
+        return "ConnAckMessage{" + "status=" + status + '}';
+    }
+
 }

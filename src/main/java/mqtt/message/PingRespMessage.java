@@ -11,4 +11,9 @@ public class PingRespMessage extends Message {
     public PingRespMessage() {
         super(Type.PINGRESP);
     }
+
+    @Override
+    public String toString() {
+        return "PingRespMessage{" + '}';
+    }
 }

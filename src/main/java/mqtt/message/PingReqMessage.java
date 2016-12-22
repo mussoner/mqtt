@@ -27,4 +27,8 @@ public class PingReqMessage extends Message {
         throw new UnsupportedOperationException("PINGREQ message does not support the RETAIN flag");
     }
 
+    @Override
+    public String toString() {
+        return "PingReqMessage{" + '}';
+    }
 }

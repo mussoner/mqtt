@@ -41,7 +41,7 @@ public class MqttBroker {
         bootstrap.setOption("child.keepAlive", true);
         bootstrap.setPipelineFactory(pipelineFactory);
 
-        Channel channel = bootstrap.bind(new InetSocketAddress(9090));
+        Channel channel = bootstrap.bind(new InetSocketAddress(1883));
         if (!channel.isBound()) {
             this.stop();
         }

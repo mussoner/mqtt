@@ -30,4 +30,9 @@ public class PubCompMessage extends RetryableMessage {
         throw new UnsupportedOperationException(
                 "PubComp messages don't use the QoS flags.");
     }
+
+    @Override
+    public String toString() {
+        return "PubCompMessage{" + '}';
+    }
 }

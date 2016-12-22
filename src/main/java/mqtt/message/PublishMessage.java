@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 
 public class PublishMessage extends RetryableMessage {
 
@@ -72,4 +73,8 @@ public class PublishMessage extends RetryableMessage {
         return new String(data);
     }
 
+    @Override
+    public String toString() {
+        return "PublishMessage{" + "topic=" + topic + ", data=" + Arrays.toString(data) + '}';
+    }
 }

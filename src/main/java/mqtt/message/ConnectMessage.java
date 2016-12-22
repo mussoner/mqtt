@@ -220,4 +220,10 @@ public class ConnectMessage extends Message {
     public boolean hasWill() {
         return hasWill;
     }
+
+    @Override
+    public String toString() {
+        return "ConnectMessage{" + "protocolId=" + protocolId + ", protocolVersion=" + protocolVersion + ", clientId=" + clientId + ", keepAlive=" + keepAlive + ", username=" + username + ", password=" + password + ", cleanSession=" + cleanSession + ", willTopic=" + willTopic + ", will=" + will + ", willQoS=" + willQoS + ", retainWill=" + retainWill + ", hasUsername=" + hasUsername + ", hasPassword=" + hasPassword + ", hasWill=" + hasWill + '}';
+    }
+
 }

@@ -18,4 +18,9 @@ public class PubRelMessage extends RetryableMessage {
         throw new UnsupportedOperationException(
                 "PubRel messages don't use the RETAIN flag.");
     }
+
+    @Override
+    public String toString() {
+        return "PubRelMessage{" + '}';
+    }
 }

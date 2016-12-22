@@ -30,4 +30,10 @@ public class PubAckMessage extends RetryableMessage {
         throw new UnsupportedOperationException(
                 "PubAck messages don't use the QoS flags.");
     }
+
+    @Override
+    public String toString() {
+        return "PubAckMessage{" + '}';
+    }
+    
 }
